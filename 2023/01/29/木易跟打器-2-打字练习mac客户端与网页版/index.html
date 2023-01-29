@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description" content="木易日志，木易某某，Each step should be recorded for the future."><meta name="keywords" content="木易日志, 木易某某, owenyang, owenyang0, code, personal opinion, OwenYang ideas"><title>NPM install - killed error solution | 修远</title><link rel="stylesheet" type="text/css" href="/css/index.css?v=1.0.0"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/normalize/latest/normalize.min.css"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/pure/latest/pure-min.min.css"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/pure/latest/grids-responsive-min.min.css"><link rel="stylesheet" href="//lib.baomitu.com/font-awesome/4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//lib.baomitu.com/jquery/latest/jquery.min.js"></script><link rel="icon" mask="" sizes="any" href="/favicon.ico"><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><link rel="alternate" type="application/atom+xml" href="/atom.xml"><script src="https://www.googletagmanager.com/gtag/js?id=UA-57882600-1" async></script><script>window.dataLayer = window.dataLayer || [];
+<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description" content="木易日志，木易某某，Each step should be recorded for the future."><meta name="keywords" content="木易日志, 木易某某, owenyang, owenyang0, code, personal opinion, OwenYang ideas"><title>木易跟打器[2]-打字练习mac客户端与网页版 | 修远</title><link rel="stylesheet" type="text/css" href="/css/index.css?v=1.0.0"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/normalize/latest/normalize.min.css"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/pure/latest/pure-min.min.css"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/pure/latest/grids-responsive-min.min.css"><link rel="stylesheet" href="//lib.baomitu.com/font-awesome/4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//lib.baomitu.com/jquery/latest/jquery.min.js"></script><link rel="icon" mask="" sizes="any" href="/favicon.ico"><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><link rel="alternate" type="application/atom+xml" href="/atom.xml"><script src="https://www.googletagmanager.com/gtag/js?id=UA-57882600-1" async></script><script>window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'UA-57882600-1');
@@ -8,14 +8,92 @@ gtag('config', 'UA-57882600-1');
   hm.src = 'https://hm.baidu.com/hm.js?' + 'bb6f3c4c30430bc657467462f66fc66c';
   var s = document.getElementsByTagName("script")[0];
   s.parentNode.insertBefore(hm, s);
-  })();</script><script type="text/javascript" src="//lib.baomitu.com/clipboard.js/latest/clipboard.min.js"></script><script type="text/javascript" src="//lib.baomitu.com/toastr.js/latest/toastr.min.js"></script><link rel="stylesheet" href="//lib.baomitu.com/toastr.js/latest/toastr.min.css"><meta name="generator" content="Hexo 6.3.0"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">NPM install - killed error solution</h1><a id="logo" href="/.">修远</a><p class="description">其修远兮之路漫漫，吾将求索于墙外之巅</p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">NPM install - killed error solution</h1><div class="post-meta">Feb 9 2015</div><a class="disqus-comment-count" data-disqus-identifier="2015/02/09/NPM-install-killed-error-solution/" href="/2015/02/09/NPM-install-killed-error-solution/#disqus_thread"></a><div class="post-content"><p>在接手一个Node项目的时候，<code>npm install</code>。却出现了”killed”的错误。以为是Node版本的问题，熟练地切换了0.11与0.10版，同样无解。<br>由于新的npm版本吧，<code>npm install</code>的时候已经无法看到常规的log信息了。以<code>npm install -d</code>查看安装的过程，发现无任何特殊的地方。在一定程度的时候，直接被”killed”。关于<code>npm install -d</code>可以看 <a target="_blank" rel="noopener" href="https://docs.npmjs.com/misc/config">npm config</a><br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">-v: --version</span><br><span class="line">-h, -?, --help, -H: --usage</span><br><span class="line">-s, --silent: --loglevel silent</span><br><span class="line">-q, --quiet: --loglevel warn</span><br><span class="line">-d: --loglevel info</span><br><span class="line">-dd, --verbose: --loglevel verbose</span><br><span class="line">-ddd: --loglevel silly</span><br><span class="line">-g: --global</span><br><span class="line">-C: --prefix</span><br><span class="line">-l: --long</span><br><span class="line">-m: --message</span><br><span class="line">-p, --porcelain: --parseable</span><br><span class="line">-reg: --registry</span><br><span class="line">-f: --force</span><br><span class="line">-desc: --description</span><br><span class="line">-S: --save</span><br><span class="line">-D: --save-dev</span><br><span class="line">-O: --save-optional</span><br><span class="line">-B: --save-bundle</span><br><span class="line">-E: --save-exact</span><br><span class="line">-y: --yes</span><br><span class="line">-n: --yes false</span><br><span class="line">ll and la commands: ls --long</span><br></pre></td></tr></table></figure></p>
-<p>最后才想到，可能是内存不够了。由于是以vagrant启动的一台ubuntu14.04的虚拟机，默认只有500M的内存。而且该项目会用到一些底层的npm包，会编译一些代码。这就导致了内存不够用。<br>可以查一下相应的系统log，在路径 <code>/var/log</code>之下，确认自己的问题。如<code>/var/log/syslog</code> 和 <code>/var/log/messages</code>等。</p>
-<h3 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h3><h4 id="1-增大内存。"><a href="#1-增大内存。" class="headerlink" title="1. 增大内存。"></a>1. 增大内存。</h4><p>由于我是虚拟机，所有增大内存相对简单。在vagrantfile里，只需要增加一条：<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">config.vm.provider &quot;virtualbox&quot; do |v|</span><br><span class="line">  v.memory = 1024</span><br><span class="line">end</span><br></pre></td></tr></table></figure><br>即可。</p>
-<h4 id="2-利用swap-file实现虚拟内存"><a href="#2-利用swap-file实现虚拟内存" class="headerlink" title="2. 利用swap file实现虚拟内存"></a>2. 利用swap file实现虚拟内存</h4><p>使用<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo swapon -s</span><br></pre></td></tr></table></figure><br>查看系统是否配置了交换区域。没有的话， 便直接开始创建swap file。<br>创建一个1G的文件。<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo fallocate -l 1G /swapfile</span><br></pre></td></tr></table></figure><br>使用<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ls -lh /swapfile</span><br></pre></td></tr></table></figure><br>确认是否是自己所需要的文件大小。</p>
-<p><strong>启用Swap文件</strong><br>首先调整文件的权限，若该文件能被其他用户随意的读写，则会产生很大的安全隐患。<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo chmod 600 /swapfile</span><br></pre></td></tr></table></figure><br>现在安全多了，可以让系统开始设置交换区域了。<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo mkswap /swapfile</span><br></pre></td></tr></table></figure><br>启用该文件<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo swapon /swapfile</span><br></pre></td></tr></table></figure><br>现在基本的步骤已经完成了，可以使用最初的命令验证swap file是否正确使用。<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">sudo swapon -s</span><br><span class="line"></span><br><span class="line">Filename                    Type          Size     Used     Priority</span><br><span class="line">/swapfile                               file          1048572     0     -1</span><br></pre></td></tr></table></figure><br>交换分区已经成功设置，系统会在必要的时候使用它。</p>
-<p><strong>注意</strong><br>现在已经启用了swap文件，但当我们重启的时候，系统不会自动地启用该swap文件。可以通过修改<code>fstab</code>文件实现开机使用swap文件。<br>用root权限编辑<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo vim /etc/fstab</span><br></pre></td></tr></table></figure><br>在文件的最后，需要添加一行告诉操作系统自动使用swap文件。<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/swapfile   none    swap    sw    0   0</span><br></pre></td></tr></table></figure></p>
-<p>如此再<code>npm install</code> 的时候，便解决了所有的问题了。</p>
-</div><div class="tags"><a href="/tags/npm"><i class="fa fa-tag">npm</i></a><a href="/tags/npm install"><i class="fa fa-tag">npm install</i></a><a href="/tags/killed"><i class="fa fa-tag">killed</i></a><a href="/tags/memory"><i class="fa fa-tag">memory</i></a><a href="/tags/npm install killed"><i class="fa fa-tag">npm install killed</i></a></div><div class="post-nav"><a class="pre" href="/2015/02/12/New-string-features-in-ECMAScript-6/">ECMAScript 6中字符串的新特性</a><a class="next" href="/2015/01/17/The-React-Quick-Start-Guide/">React JS快速开始手册</a></div><link rel="stylesheet" type="text/css" href="https://unpkg.com/disqusjs@1.3/dist/disqusjs.css"><script type="text/javascript" src="https://unpkg.com/disqusjs@1.3/dist/disqus.js"></script><script type="text/javascript" id="disqus-count-script">$(function() {
+  })();</script><script type="text/javascript" src="//lib.baomitu.com/clipboard.js/latest/clipboard.min.js"></script><script type="text/javascript" src="//lib.baomitu.com/toastr.js/latest/toastr.min.js"></script><link rel="stylesheet" href="//lib.baomitu.com/toastr.js/latest/toastr.min.css"><meta name="generator" content="Hexo 6.3.0"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">木易跟打器[2]-打字练习mac客户端与网页版</h1><a id="logo" href="/.">修远</a><p class="description">其修远兮之路漫漫，吾将求索于墙外之巅</p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">木易跟打器[2]-打字练习mac客户端与网页版</h1><div class="post-meta">Jan 29 2023</div><a class="disqus-comment-count" data-disqus-identifier="2023/01/29/木易跟打器-2-打字练习mac客户端与网页版/" href="/2023/01/29/%E6%9C%A8%E6%98%93%E8%B7%9F%E6%89%93%E5%99%A8-2-%E6%89%93%E5%AD%97%E7%BB%83%E4%B9%A0mac%E5%AE%A2%E6%88%B7%E7%AB%AF%E4%B8%8E%E7%BD%91%E9%A1%B5%E7%89%88/#disqus_thread"></a><div class="post-content"><h2 id="一、木易跟打器"><a href="#一、木易跟打器" class="headerlink" title="一、木易跟打器"></a>一、木易跟打器</h2><p><strong>木易跟打器</strong>也叫 <code>mac跟打器</code> 或 <code>qq跟打器</code>，是由木易打造的当前macOS平台<strong>唯一的</strong>、可<strong>直接载文</strong>的跟打器。可通过macQQ直接群载文，计算跟打指标最终发送成绩至QQ群里，具有发文<code>复合指标</code>、历史数据<code>可视化</code>、轻便、准确、快捷等特点。</p>
+<p>如未下载<code>mac客户端</code>也可直接通过网页访问进行本地练习，支持<code>击键</code>、<code>键准</code>等复合指标；根据字频提供前3500的单字练习文本，也可直接自定义练习文本，让打字练习如虎添翼。</p>
+<blockquote>
+<p>该工具是在笔者学习虎码(性能最优的形码)的过程中，开发并完善的。并为其提供了虎码学习者的专用练习文本</p>
+</blockquote>
+<h2 id="二、下载访问地址"><a href="#二、下载访问地址" class="headerlink" title="二、下载访问地址"></a>二、下载访问地址</h2><h3 id="2-1-网页练习"><a href="#2-1-网页练习" class="headerlink" title="2.1 网页练习"></a>2.1 网页练习</h3><blockquote>
+<p>木易跟打器 - 发文 <a target="_blank" rel="noopener" href="https://typer.owenyang.top/kata">https://typer.owenyang.top/kata</a></p>
+</blockquote>
+<h3 id="2-2-客户端下载"><a href="#2-2-客户端下载" class="headerlink" title="2.2 客户端下载"></a>2.2 客户端下载</h3><blockquote>
+<p>1、木易跟打器 - 程序下载 <a target="_blank" rel="noopener" href="https://typer.owenyang.top/download">https://typer.owenyang.top/download</a><br>2、也可直接在百度云下载<strong>木易跟打器0.3.0（提取码8888）：</strong><br><a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1aDbfbFx4mrM2B-ErvR-tnQ?pwd=8888">https://pan.baidu.com/s/1aDbfbFx4mrM2B-ErvR-tnQ?pwd=8888</a></p>
+</blockquote>
+<h3 id="2-3-功能对比"><a href="#2-3-功能对比" class="headerlink" title="2.3 功能对比"></a>2.3 功能对比</h3><table>
+<thead>
+<tr>
+<th>功能</th>
+<th>mac客户端</th>
+<th>网页版</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>直接载文(F4)</td>
+<td>✅</td>
+<td>❌</td>
+</tr>
+<tr>
+<td>潜水模式</td>
+<td>✅</td>
+<td>不适用</td>
+</tr>
+<tr>
+<td>赛文跟打</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>词库练习</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>发文练习(F2复合指标击键、键准 )</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>发文练习(常用单字字频排序)</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>历史记录(所有数据)</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>数据可视化</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>按键统计(热力图)</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>词提上传(86、091、虎码等无限制)</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>主题切换(暗黑模式)</td>
+<td>✅</td>
+<td>✅</td>
+</tr>
+</tbody>
+</table>
+<h2 id="三、功能概览"><a href="#三、功能概览" class="headerlink" title="三、功能概览"></a>三、功能概览</h2><h3 id="3-1-赛文跟打-主界面"><a href="#3-1-赛文跟打-主界面" class="headerlink" title="3.1 赛文跟打-主界面"></a>3.1 赛文跟打-主界面</h3><p><img style="max-height:400px;" alt="木易跟打器-赛文跟打" src="https://pic2.zhimg.com/v2-7cc885064ad594cfc7d2269ea90fd921_r.jpg"></p>
+<h3 id="3-2-发文"><a href="#3-2-发文" class="headerlink" title="3.2 发文"></a>3.2 发文</h3><p>可自定义复合指标：击键、键准，通过复合指标后方可进入下一段，否则可乱序、重打、无操作。</p>
+<p>可自定义练习文本：单字前3500字频排序，虎码练习文本，自定义文本等。</p>
+<p><img style="max-height:400px;" alt="木易跟打器-发文" src="https://pic2.zhimg.com/v2-3c5bf390cabff3ea2e58d6d9b0728899_r.jpg"><br><img style="max-height:400px;" alt="木易跟打器-发文-练习文本" src="https://pic2.zhimg.com/v2-5466bc979b3d2185d2025e8d688f5551_r.jpg"></p>
+<h3 id="3-3-跟打历史"><a href="#3-3-跟打历史" class="headerlink" title="3.3 跟打历史"></a>3.3 跟打历史</h3><p>历史记录全开放，数据可视化，让你体味成长的乐趣。<br><img style="max-height:400px;" alt="木易跟打器-历史记录" src="https://pic1.zhimg.com/v2-44c4f9f9ee7dbbfbd87a5ca1067b76e8_r.jpg"></p>
+<h3 id="3-4-词提开启"><a href="#3-4-词提开启" class="headerlink" title="3.4 词提开启"></a>3.4 词提开启</h3><p><img style="max-height:400px;" alt="木易跟打器-词提开启" src="https://pic3.zhimg.com/v2-9a0e6796a6b3af5ee7d2d2f54d3302b2_r.jpg"></p>
+<h3 id="3-5-主题切换"><a href="#3-5-主题切换" class="headerlink" title="3.5 主题切换"></a>3.5 主题切换</h3><p><img style="max-height:400px;" alt="木易跟打器-主题切换" src="https://pic2.zhimg.com/v2-cf8896f5d522ae43d9d9d822915dabdd_r.jpg"></p>
+<h2 id="四、更多功能"><a href="#四、更多功能" class="headerlink" title="四、更多功能"></a>四、更多功能</h2><p>更多功能，等你体验发现！<br><strong>说明：</strong>由于域名<a target="_blank" rel="noopener" href="https://typer.owenyang.top">https://typer.owenyang.top</a>还在备案中，访问当前域名可能会较慢，必要情况可使用科学上网。</p>
+</div><div class="tags"></div><div class="post-nav"><a class="next" href="/2023/01/07/%E6%9C%A8%E6%98%93%E8%B7%9F%E6%89%93%E5%99%A8-macOS%E4%B8%8A%E5%8F%AF%E7%9B%B4%E6%8E%A5%E8%BD%BD%E6%96%87%E7%9A%84%E8%B7%9F%E6%89%93%E5%99%A8/">木易跟打器[1]-macOS上可直接载文的跟打器</a></div><link rel="stylesheet" type="text/css" href="https://unpkg.com/disqusjs@1.3/dist/disqusjs.css"><script type="text/javascript" src="https://unpkg.com/disqusjs@1.3/dist/disqus.js"></script><script type="text/javascript" id="disqus-count-script">$(function() {
   var xhr = new XMLHttpRequest();
   xhr.open('GET', '//disqus.com/next/config.json', true);
   xhr.timeout = 2500;
@@ -36,9 +114,9 @@ function loadComments() {
   window.dsqjs = new DisqusJS({
     shortname: 'owenyang',
     siteName: '修远',
-    identifier: '2015/02/09/NPM-install-killed-error-solution/',
-    url: 'https://owenyang0.github.io/2015/02/09/NPM-install-killed-error-solution/',
-    title: 'NPM install - killed error solution',
+    identifier: '2023/01/29/木易跟打器-2-打字练习mac客户端与网页版/',
+    url: 'https://owenyang0.github.io/2023/01/29/木易跟打器-2-打字练习mac客户端与网页版/',
+    title: '木易跟打器[2]-打字练习mac客户端与网页版',
     api: '',
     apikey: '',
     admin: '',
