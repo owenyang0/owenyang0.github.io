@@ -1,0 +1,460 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description" content="木易日志，木易某某，Each step should be recorded for the future."><meta name="keywords" content="木易日志, 木易某某, owenyang, owenyang0, code, personal opinion, OwenYang ideas"><title>基础 | 02 CSS3的新特性一览 | 修远</title><link rel="stylesheet" type="text/css" href="/css/index.css?v=1.0.0"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/normalize/latest/normalize.min.css"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/pure/latest/pure-min.min.css"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/pure/latest/grids-responsive-min.min.css"><link rel="stylesheet" href="//lib.baomitu.com/font-awesome/4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//lib.baomitu.com/jquery/latest/jquery.min.js"></script><link rel="icon" mask="" sizes="any" href="/favicon.ico"><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><link rel="alternate" type="application/atom+xml" href="/atom.xml"><script src="https://www.googletagmanager.com/gtag/js?id=UA-57882600-1" async></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-57882600-1');
+</script><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement('script');
+  hm.src = 'https://hm.baidu.com/hm.js?' + 'bb6f3c4c30430bc657467462f66fc66c';
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+  })();</script><script type="text/javascript" src="//lib.baomitu.com/clipboard.js/latest/clipboard.min.js"></script><script type="text/javascript" src="//lib.baomitu.com/toastr.js/latest/toastr.min.js"></script><link rel="stylesheet" href="//lib.baomitu.com/toastr.js/latest/toastr.min.css"><meta name="generator" content="Hexo 6.3.0"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">基础 | 02 CSS3的新特性一览</h1><a id="logo" href="/.">修远</a><p class="description">其修远兮之路漫漫，吾将求索于墙外之巅</p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">基础 | 02 CSS3的新特性一览</h1><div class="post-meta">Mar 28 2023<span> | </span><span class="category"><a href="/categories/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95%E8%BF%9B%E9%98%B6%E7%B3%BB%E5%88%97%E6%95%99%E7%A8%8B/">前端面试进阶系列教程</a></span></div><a class="disqus-comment-count" data-disqus-identifier="2023/03/28/基础-02-CSS3的新特性一览/" href="/2023/03/28/%E5%9F%BA%E7%A1%80-02-CSS3%E7%9A%84%E6%96%B0%E7%89%B9%E6%80%A7%E4%B8%80%E8%A7%88/#disqus_thread"></a><div class="post-content"><p><img style="max-height:400px;" alt="CSS3的新特性一览" src="https://static.owenyang.top/blogs/background2.jpg"></p>
+<p><strong>层叠样式表</strong>（英语：Cascading Style Sheets，缩写：<code>CSS</code>）是一种用来为结构化文档（如HTML文档或XML应用）添加样式（字体、间距和颜色等）的计算机语言，由W3C定义和维护。它能将网页的表现和结构分离，使得网页开发更加灵活、易于维护和修改。<code>CSS3</code>现在已被大部分现代浏览器支持，而下一版的<code>CSS4</code>仍在开发中。</p>
+<h2 id="一、CSS规范的前世今生"><a href="#一、CSS规范的前世今生" class="headerlink" title="一、CSS规范的前世今生"></a>一、CSS规范的前世今生</h2><p>CSS最初由W3C于1996年提出，并于1998年发布了CSS2。随着Web的发展，CSS规范得到了不断的更新和扩展。CSS3的提出主要是为了解决CSS2中的一些问题，并引入新的功能和特性。CSS3标准分为多个模块，每个模块定义了一些新的功能和特性。</p>
+<h2 id="二、CSS3的新特性"><a href="#二、CSS3的新特性" class="headerlink" title="二、CSS3的新特性"></a>二、CSS3的新特性</h2><h3 id="2-1-选择器"><a href="#2-1-选择器" class="headerlink" title="2.1 选择器"></a>2.1 选择器</h3><p>在CSS3中，新增了一些强大的选择器，可以更精确地选择HTML元素，使得样式表的编写更加简单和灵活</p>
+<table>
+<thead>
+<tr>
+<th>选择器</th>
+<th>示例</th>
+<th>示例说明</th>
+<th>CSS版本</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>.class</td>
+<td>.intro</td>
+<td>选择所有class=”intro”的元素</td>
+<td>1</td>
+</tr>
+<tr>
+<td>#id</td>
+<td>#firstname</td>
+<td>选择所有id=”firstname”的元素</td>
+<td>1</td>
+</tr>
+<tr>
+<td>*</td>
+<td>*</td>
+<td>选择所有元素</td>
+<td>2</td>
+</tr>
+<tr>
+<td>element</td>
+<td>p</td>
+<td>选择所有<p>元素</td>
+<td>1</td>
+</tr>
+<tr>
+<td>element,element</td>
+<td>div,p</td>
+<td>选择所有<div>元素和<p>元素</td>
+<td>1</td>
+</tr>
+<tr>
+<td>element element</td>
+<td>div p</td>
+<td>选择<div>元素内的所有<p>元素</td>
+<td>1</td>
+</tr>
+<tr>
+<td>element&gt;element</td>
+<td>div&gt;p</td>
+<td>选择所有父级是 <div> 元素的 <p> 元素</td>
+<td>2</td>
+</tr>
+<tr>
+<td>element+element</td>
+<td>div+p</td>
+<td>选择所有紧跟在 <div> 元素之后的第一个 <p> 元素</td>
+<td>2</td>
+</tr>
+<tr>
+<td>[attribute]</td>
+<td>[target]</td>
+<td>选择所有带有target属性元素</td>
+<td>2</td>
+</tr>
+<tr>
+<td>[attribute=value]</td>
+<td>[target=-blank]</td>
+<td>选择所有使用target=”-blank”的元素</td>
+<td>2</td>
+</tr>
+<tr>
+<td>[attribute~=value]</td>
+<td>[title~=flower]</td>
+<td>选择标题属性包含单词”flower”的所有元素</td>
+<td>2</td>
+</tr>
+<tr>
+<td>[attribute¦=language]</td>
+<td>[lang¦=en]</td>
+<td>选择 lang 属性等于 en，或者以 en- 为开头的所有元素</td>
+<td>2</td>
+</tr>
+<tr>
+<td>:link</td>
+<td>a:link</td>
+<td>选择所有未访问链接</td>
+<td>1</td>
+</tr>
+<tr>
+<td>:visited</td>
+<td>a:visited</td>
+<td>选择所有访问过的链接</td>
+<td>1</td>
+</tr>
+<tr>
+<td>:active</td>
+<td>a:active</td>
+<td>选择活动链接</td>
+<td>1</td>
+</tr>
+<tr>
+<td>:hover</td>
+<td>a:hover</td>
+<td>选择鼠标在链接上面时</td>
+<td>1</td>
+</tr>
+<tr>
+<td>:focus</td>
+<td>input:focus</td>
+<td>选择具有焦点的输入元素</td>
+<td>2</td>
+</tr>
+<tr>
+<td>:first-letter</td>
+<td>p:first-letter</td>
+<td>选择每一个<p>元素的第一个字母</td>
+<td>1</td>
+</tr>
+<tr>
+<td>:first-line</td>
+<td>p:first-line</td>
+<td>选择每一个<p>元素的第一行</td>
+<td>1</td>
+</tr>
+<tr>
+<td>:first-child</td>
+<td>p:first-child</td>
+<td>指定只有当<p>元素是其父级的第一个子级的样式。</td>
+<td>2</td>
+</tr>
+<tr>
+<td>:before</td>
+<td>p:before</td>
+<td>在每个<p>元素之前插入内容</td>
+<td>2</td>
+</tr>
+<tr>
+<td>:after</td>
+<td>p:after</td>
+<td>在每个<p>元素之后插入内容</td>
+<td>2</td>
+</tr>
+<tr>
+<td>:lang(language)</td>
+<td>p:lang(it)</td>
+<td>选择一个lang属性的起始值=”it”的所有<p>元素</td>
+<td>2</td>
+</tr>
+<tr>
+<td>element1~element2</td>
+<td>p~ul</td>
+<td>选择p元素之后的每一个ul元素</td>
+<td>3</td>
+</tr>
+<tr>
+<td>[attribute^=value]</td>
+<td>a[src^=”https”]</td>
+<td>选择每一个src属性的值以”https”开头的元素</td>
+<td>3</td>
+</tr>
+<tr>
+<td>[attribute$=value]</td>
+<td>a[src$=”.pdf”]</td>
+<td>选择每一个src属性的值以”.pdf”结尾的元素</td>
+<td>3</td>
+</tr>
+<tr>
+<td>[attribute*=value]</td>
+<td>a[src*=”runoob”]</td>
+<td>选择每一个src属性的值包含子字符串”runoob”的元素</td>
+<td>3</td>
+</tr>
+<tr>
+<td>:first-of-type</td>
+<td>p:first-of-type</td>
+<td>选择每个p元素是其父级的第一个p元素</td>
+<td>3</td>
+</tr>
+<tr>
+<td>:last-of-type</td>
+<td>p:last-of-type</td>
+<td>选择每个p元素是其父级的最后一个p元素</td>
+<td>3</td>
+</tr>
+<tr>
+<td>:only-of-type</td>
+<td>p:only-of-type</td>
+<td>选择每个p元素是其父级的唯一p元素</td>
+<td>3</td>
+</tr>
+<tr>
+<td>:only-child</td>
+<td>p:only-child</td>
+<td>选择每个p元素是其父级的唯一子元素</td>
+<td>3</td>
+</tr>
+<tr>
+<td>:nth-child(n)</td>
+<td>p:nth-child(2)</td>
+<td>选择每个p元素是其父级的第二个子元素</td>
+<td>3</td>
+</tr>
+<tr>
+<td>:nth-last-child(n)</td>
+<td>p:nth-last-child(2)</td>
+<td>选择每个p元素的是其父级的第二个子元素，从最后一个子项计数</td>
+<td>3</td>
+</tr>
+<tr>
+<td>:nth-of-type(n)</td>
+<td>p:nth-of-type(2)</td>
+<td>选择每个p元素是其父级的第二个p元素</td>
+<td>3</td>
+</tr>
+<tr>
+<td>:nth-last-of-type(n)</td>
+<td>p:nth-last-of-type(2)</td>
+<td>选择每个p元素的是其父级的第二个p元素，从最后一个子项计数</td>
+<td>3</td>
+</tr>
+<tr>
+<td>:last-child</td>
+<td>p:last-child</td>
+<td>选择每个p元素是其父级的最后一个子级。</td>
+<td>3</td>
+</tr>
+<tr>
+<td>:root</td>
+<td>:root</td>
+<td>选择文档的根元素</td>
+<td>3</td>
+</tr>
+<tr>
+<td>:empty</td>
+<td>p:empty</td>
+<td>选择每个没有任何子级的p元素（包括文本节点）</td>
+<td>3</td>
+</tr>
+<tr>
+<td>:target</td>
+<td>#news:target</td>
+<td>选择当前活动的#news元素（包含该锚名称的点击的URL）</td>
+<td>3</td>
+</tr>
+<tr>
+<td>:enabled</td>
+<td>input:enabled</td>
+<td>选择每一个已启用的输入元素</td>
+<td>3</td>
+</tr>
+<tr>
+<td>:disabled</td>
+<td>input:disabled</td>
+<td>选择每一个禁用的输入元素</td>
+<td>3</td>
+</tr>
+<tr>
+<td>:checked</td>
+<td>input:checked</td>
+<td>选择每个选中的输入元素</td>
+<td>3</td>
+</tr>
+<tr>
+<td>:not(selector)</td>
+<td>:not(p)</td>
+<td>选择每个并非p元素的元素</td>
+<td>3</td>
+</tr>
+<tr>
+<td>::selection</td>
+<td>::selection</td>
+<td>匹配元素中被用户选中或处于高亮状态的部分</td>
+<td>3</td>
+</tr>
+<tr>
+<td>:out-of-range</td>
+<td>:out-of-range</td>
+<td>匹配值在指定区间之外的input元素</td>
+<td>3</td>
+</tr>
+<tr>
+<td>:in-range</td>
+<td>:in-range</td>
+<td>匹配值在指定区间之内的input元素</td>
+<td>3</td>
+</tr>
+<tr>
+<td>:read-write</td>
+<td>:read-write</td>
+<td>用于匹配可读及可写的元素</td>
+<td>3</td>
+</tr>
+<tr>
+<td>:read-only</td>
+<td>:read-only</td>
+<td>用于匹配设置 “readonly”（只读） 属性的元素</td>
+<td>3</td>
+</tr>
+<tr>
+<td>:optional</td>
+<td>:optional</td>
+<td>用于匹配可选的输入元素</td>
+<td>3</td>
+</tr>
+<tr>
+<td>:required</td>
+<td>:required</td>
+<td>用于匹配设置了 “required” 属性的元素</td>
+<td>3</td>
+</tr>
+<tr>
+<td>:valid</td>
+<td>:valid</td>
+<td>用于匹配输入值为合法的元素</td>
+<td>3</td>
+</tr>
+<tr>
+<td>:invalid</td>
+<td>:invalid</td>
+<td>用于匹配输入值为非法的元素</td>
+<td>3</td>
+</tr>
+<tr>
+<td>:required</td>
+<td>:required</td>
+<td>用于匹配设置了 “required” 属性的元素</td>
+<td>3</td>
+</tr>
+<tr>
+<td>:valid</td>
+<td>:valid</td>
+<td>用于匹配输入值为合法的元素</td>
+<td>3</td>
+</tr>
+<tr>
+<td>:invalid</td>
+<td>:invalid</td>
+<td>用于匹配输入值为非法的元素</td>
+<td>3</td>
+</tr>
+</tbody>
+</table>
+<h3 id="2-2-布局和定位"><a href="#2-2-布局和定位" class="headerlink" title="2.2 布局和定位"></a>2.2 布局和定位</h3><p>CSS3新增了一些布局和定位的特性，如弹性布局（flexbox）、网格布局（grid）、多列布局（multicolumn）等，这些特性可以更好地控制页面布局和元素定位。</p>
+<p><strong>弹性布局（flexbox）</strong> 是一种强大的布局模型，可以使元素在容器中按照自适应、灵活的方式排列，适应不同的屏幕尺寸和设备方向。</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: flex;</span><br><span class="line">  <span class="attribute">flex-direction</span>: row;</span><br><span class="line">  <span class="attribute">justify-content</span>: space-between;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>网格布局（grid）</strong> 是一种二维网格布局模型，可以将页面分成行和列，并将元素放置在网格单元格中，实现复杂的布局效果。<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: grid;</span><br><span class="line">  <span class="attribute">grid-template-columns</span>: <span class="number">1</span>fr <span class="number">2</span>fr;</span><br><span class="line">  <span class="attribute">grid-template-rows</span>: auto;</span><br><span class="line">  <span class="attribute">grid-gap</span>: <span class="number">10px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p><strong>多列布局</strong> CSS3允许我们通过column-count属性，将HTML元素分为多列布局，从而实现更加美观、自然的版面效果。</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">column-count</span>: <span class="number">3</span>;</span><br></pre></td></tr></table></figure>
+<h3 id="2-3-动画和过渡"><a href="#2-3-动画和过渡" class="headerlink" title="2.3 动画和过渡"></a>2.3 动画和过渡</h3><p>CSS3还引入了一些动画和过渡的特性，如动画（@keyframes）、过渡（transition）等，可以实现更加复杂、流畅的页面效果。</p>
+<p><strong>动画（@keyframes）</strong>是一种定义动画的方法，可以定义动画的起点、终点和中间状态，并可以对动画进行控制和设置。<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">@keyframes</span> spin &#123;</span><br><span class="line">  <span class="selector-tag">from</span> &#123;</span><br><span class="line">    <span class="attribute">transform</span>: <span class="built_in">rotate</span>(<span class="number">0deg</span>);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="selector-tag">to</span> &#123;</span><br><span class="line">    <span class="attribute">transform</span>: <span class="built_in">rotate</span>(<span class="number">360deg</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.spinner</span> &#123;</span><br><span class="line">  <span class="attribute">animation</span>: spin <span class="number">1s</span> linear infinite;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">@keyframes</span> blink &#123;</span><br><span class="line">  <span class="selector-tag">from</span> &#123;</span><br><span class="line">    <span class="attribute">opacity</span>: <span class="number">1.0</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="selector-tag">to</span> &#123;</span><br><span class="line">    <span class="attribute">opacity</span>: <span class="number">0.0</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.cursor</span> &#123;</span><br><span class="line">  <span class="attribute">animation</span>: blink <span class="number">1s</span> infinite;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><br><strong>animation属性说明</strong></p>
+<blockquote>
+<p><code>animation-name</code>：动画名称<br><code>animation-duration</code>：动画持续时间<br><code>animation-timing-function</code>：动画时间函数<br><code>animation-delay</code>：动画延迟时间<br><code>animation-iteration-count</code>：动画执行次数，可以设置为一个整数，也可以设置为infinite，意思是无限循环<br><code>animation-direction</code>：动画执行方向<br><code>animation-paly-state</code>：动画播放状态<br><code>animation-fill-mode</code>：动画填充模式</p>
+</blockquote>
+<p><strong>过渡（transition）</strong>是一种定义元素过渡效果的方法，可以实现元素属性的平滑过渡和变化。<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.button</span> &#123;</span><br><span class="line">  <span class="attribute">transition</span>: all <span class="number">0.2s</span> ease-in-out;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.button</span><span class="selector-pseudo">:hover</span> &#123;</span><br><span class="line">  <span class="attribute">background-color</span>: red;</span><br><span class="line">  <span class="attribute">color</span>: white;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h3 id="2-4-媒体查询"><a href="#2-4-媒体查询" class="headerlink" title="2.4 媒体查询"></a>2.4 媒体查询</h3><p><strong>媒体查询（Media Queries）</strong>可以根据设备的特性、屏幕大小、分辨率等信息，为网页应用不同的CSS样式。这使得我们可以通过一份HTML代码，为不同的设备提供不同的界面效果。</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">@media</span> screen <span class="keyword">and</span> (<span class="attribute">max-width</span>: <span class="number">600px</span>) &#123;</span><br><span class="line">  <span class="comment">/* 600px及以下屏幕大小下的CSS样式 */</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="2-5-2D-3D转换"><a href="#2-5-2D-3D转换" class="headerlink" title="2.5 2D/3D转换"></a>2.5 2D/3D转换</h3><p>CSS3允许我们通过 <code>transform</code> 属性，对HTML元素进行旋转、缩放、平移等变换操作，从而实现更加生动、立体的界面效果。<br><code>transform-origin</code> 转换元素的位置（围绕那个点进行转换），默认的转换原点是<code>center</code></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">transform</span>: <span class="built_in">rotate</span>(<span class="number">30deg</span>);</span><br><span class="line"><span class="attribute">transform</span>: <span class="built_in">translate</span>(<span class="number">120px</span>, <span class="number">50%</span>); // 位移</span><br><span class="line"><span class="attribute">transform</span>: <span class="built_in">scale</span>(<span class="number">2</span>, <span class="number">0.5</span>); // 缩放</span><br><span class="line"><span class="attribute">transform</span>: <span class="built_in">rotate</span>(<span class="number">0.5turn</span>); // 旋转</span><br><span class="line"><span class="attribute">transform</span>: <span class="built_in">skew</span>(<span class="number">30deg</span>, <span class="number">20deg</span>); // 倾斜</span><br></pre></td></tr></table></figure>
+<h3 id="2-6-样式"><a href="#2-6-样式" class="headerlink" title="2.6 样式"></a>2.6 样式</h3><p><strong>1) 边框圆角</strong><br>CSS3允许我们通过border-radius属性，为HTML元素的边框设置圆角效果。</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">border-radius</span>: <span class="number">5px</span>;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>border-radius：创建圆角边框<br>box-shadow：为元素添加阴影<br>border-image：使用图片来绘制边框</p>
+</blockquote>
+<p><strong>2) 阴影效果</strong><br>CSS3允许我们通过box-shadow属性，为HTML元素添加阴影效果，从而实现更加立体、生动的界面效果。</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">box-shadow</span>: <span class="number">3px</span> <span class="number">3px</span> <span class="number">3px</span> <span class="number">#888</span>;</span><br></pre></td></tr></table></figure>
+<p><strong>3) 背景</strong><br>新增了几个关于背景的属性，分别是 <code>background-clip</code>、<code>background-origin</code>、<code>background-size</code> 和 <code>background-break</code></p>
+<p><strong>4) 渐变效果</strong><br>CSS3允许我们通过linear-gradient或radial-gradient函数，为HTML元素设置渐变效果，从而实现更加丰富、柔和的界面效果。</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">background</span>: <span class="built_in">linear-gradient</span>(to bottom, <span class="number">#FFFFFF</span>, <span class="number">#000000</span>);</span><br></pre></td></tr></table></figure>
+<p><strong>5) 文字、颜色等</strong><br><strong>文字</strong><br><code>word-wrap</code> word-wrap: normal|break-word</p>
+<p><code>text-overflow</code> 设置或检索当当前行超过指定容器的边界时如何显示，属性有两个值选择：</p>
+<ul>
+<li>clip：修剪文本 | ellipsis：显示省略符号来代表被修剪的文本</li>
+</ul>
+<p><code>text-shadow</code> text-shadow可向文本应用阴影。能够规定水平阴影、垂直阴影、模糊距离，以及阴影的颜色</p>
+<p><code>text-decoration</code> CSS3里面开始支持对文字的更深层次的渲染，具体有三个属性可供设置：</p>
+<ul>
+<li>text-fill-color: 设置文字内部填充颜色</li>
+<li>text-stroke-color: 设置文字边界填充颜色</li>
+<li>text-stroke-width: 设置文字边界宽度</li>
+</ul>
+<p><strong>颜色</strong><br>css3新增了新的颜色表示方式rgba与hsla<br><code>rgba</code> 分为两部分，rgb为颜色值，a为透明度<br><code>hala</code> 分为四部分，h为色相，s为饱和度，l为亮度，a为透明度</p>
+<h2 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h2><p>以上就是CSS3的一些新特性，这些新特性可以使我们更加轻松、高效地实现各种丰富、生动、美观的界面效果。</p>
+<blockquote>
+<p><a href="/2023/03/26/前端技术全方位深度进阶指南/">《前端技术全方位深度进阶指南》系列教程</a></p>
+</blockquote>
+</div><div class="tags"><a href="/tags/CSS"><i class="fa fa-tag">CSS</i></a><a href="/tags/前端进阶"><i class="fa fa-tag">前端进阶</i></a><a href="/tags/前端面试"><i class="fa fa-tag">前端面试</i></a></div><div class="post-nav"><a class="next" href="/2023/03/26/%E5%9F%BA%E7%A1%80-01-HTML5%E7%9A%84%E6%96%B0%E7%89%B9%E6%80%A7%E4%B8%8E%E6%A1%88%E4%BE%8B%E6%BC%94%E7%A4%BA/">基础 | 01 HTML5的新特性与案例演示</a></div><link rel="stylesheet" type="text/css" href="https://unpkg.com/disqusjs@1.3/dist/disqusjs.css"><script type="text/javascript" src="https://unpkg.com/disqusjs@1.3/dist/disqus.js"></script><script type="text/javascript" id="disqus-count-script">$(function() {
+  var xhr = new XMLHttpRequest();
+  xhr.open('GET', '//disqus.com/next/config.json', true);
+  xhr.timeout = 2500;
+  xhr.onreadystatechange = function () {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+      $('.post-meta .post-comments-count').show();
+      var s = document.createElement('script');
+      s.id = 'dsq-count-scr';
+      s.src = 'https://owenyang.disqus.com/count.js';
+      s.async = true;
+      (document.head || document.body).appendChild(s);
+    }
+  };
+  xhr.ontimeout = function () { xhr.abort(); };
+  xhr.send(null);
+});</script><div class="comments" id="disqus_thread"><script type="text/javascript">// Load comments with DisqusJS
+function loadComments() {
+  window.dsqjs = new DisqusJS({
+    shortname: 'owenyang',
+    siteName: '修远',
+    identifier: '2023/03/28/基础-02-CSS3的新特性一览/',
+    url: 'https://owenyang0.github.io/2023/03/28/基础-02-CSS3的新特性一览/',
+    title: '基础 | 02 CSS3的新特性一览',
+    api: '',
+    apikey: '',
+    admin: '',
+    adminLabel: ''
+  });
+}
+// Lazy load {# Credit: https://github.com/theme-next/hexo-theme-next/blob/master/layout/_third-party/comments/disqus.swig #}
+(function () {
+  var offsetTop = document.getElementById('disqus_thread').offsetTop - window.innerHeight;
+  if (offsetTop <= 0) {
+    // Load directly when there's no scrollbar
+    window.addEventListener('load', loadComments, false);
+  } else {
+    var disqusScroll = function () {
+      // offsetTop may changes because of manually resizing browser window or lazy loading images
+      var offsetTop = document.getElementById('disqus_thread').offsetTop - window.innerHeight;
+      var scrollTop = window.scrollY;
+
+      // Pre-load comments a bit? (margin or anything else)
+      if (offsetTop - scrollTop < 60) {
+        window.removeEventListener('scroll', disqusScroll);
+        loadComments();
+      }
+    };
+    window.addEventListener('scroll', disqusScroll);
+  }
+})();
+// Scroll to comments automatically if #comment-xxx anchor specified
+window.addEventListener('load', function () {
+  // I don't know why, it just works.
+  window.setTimeout(function () {
+    if (location.hash.indexOf('#comment-') !== -1) {
+      document.getElementById('disqus_thread').scrollIntoView(true);
+    }
+  }, 100);
+}, false);
+</script></div></div></div></div><div class="pure-u-1-4 hidden_mid_and_down"><div id="sidebar"><div class="widget"><form class="search-form" action="//www.google.com/search" method="get" accept-charset="utf-8" target="_blank"><input type="text" name="q" maxlength="20" placeholder="Search"/><input type="hidden" name="sitesearch" value="https://owenyang0.github.io"/></form></div><div class="widget"><div class="author-info"><a class="info-avatar" href="/about/" title="关于"><img class="nofancybox" src="/img/avatar.jpg"/></a><p>技术宅，电子垃圾体验者、生产者、回收者，挨踢FEer</p><a class="info-icon" href="mailto:songallica@gmail.com" title="Email" target="_blank" style="margin-inline:5px"> <i class="fa fa-envelope-square" style="margin-inline:5px"></i></a><a class="info-icon" href="https://github.com/owenyang0" title="Github" target="_blank" style="margin-inline:5px"> <i class="fa fa-github-square" style="margin-inline:5px"></i></a><a class="info-icon" href="/atom.xml" title="RSS" target="_blank" style="margin-inline:5px"> <i class="fa fa-rss-square" style="margin-inline:5px"></i></a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> 分类</i></div><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95%E8%BF%9B%E9%98%B6%E7%B3%BB%E5%88%97%E6%95%99%E7%A8%8B/">前端面试进阶系列教程</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%8A%80%E6%9C%AF%E6%B2%89%E6%B7%80/">技术沉淀</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E5%85%B7/">软件工具</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> 标签</i></div><div class="tagcloud"><a href="/tags/Rx/" style="font-size: 15px;">Rx</a> <a href="/tags/RxJS/" style="font-size: 15px;">RxJS</a> <a href="/tags/Reactive-Programming/" style="font-size: 15px;">Reactive Programming</a> <a href="/tags/2014/" style="font-size: 15px;">2014</a> <a href="/tags/2015/" style="font-size: 15px;">2015</a> <a href="/tags/goal/" style="font-size: 15px;">goal</a> <a href="/tags/summary/" style="font-size: 15px;">summary</a> <a href="/tags/plan/" style="font-size: 15px;">plan</a> <a href="/tags/AEM/" style="font-size: 15px;">AEM</a> <a href="/tags/CMS/" style="font-size: 15px;">CMS</a> <a href="/tags/Drupal/" style="font-size: 15px;">Drupal</a> <a href="/tags/Adobe/" style="font-size: 15px;">Adobe</a> <a href="/tags/Experience-Management/" style="font-size: 15px;">Experience Management</a> <a href="/tags/Babel/" style="font-size: 15px;">Babel</a> <a href="/tags/Rollup/" style="font-size: 15px;">Rollup</a> <a href="/tags/Modules/" style="font-size: 15px;">Modules</a> <a href="/tags/ES6/" style="font-size: 15px;">ES6</a> <a href="/tags/NPM/" style="font-size: 15px;">NPM</a> <a href="/tags/JavaScript/" style="font-size: 15px;">JavaScript</a> <a href="/tags/Tab/" style="font-size: 15px;">Tab</a> <a href="/tags/ECMAScript-6/" style="font-size: 15px;">ECMAScript 6</a> <a href="/tags/Array/" style="font-size: 15px;">Array</a> <a href="/tags/TDD/" style="font-size: 15px;">TDD</a> <a href="/tags/Mocha/" style="font-size: 15px;">Mocha</a> <a href="/tags/MaintainableCSS/" style="font-size: 15px;">MaintainableCSS</a> <a href="/tags/CSS/" style="font-size: 15px;">CSS</a> <a href="/tags/Semantics/" style="font-size: 15px;">Semantics</a> <a href="/tags/npm/" style="font-size: 15px;">npm</a> <a href="/tags/npm-install/" style="font-size: 15px;">npm install</a> <a href="/tags/killed/" style="font-size: 15px;">killed</a> <a href="/tags/memory/" style="font-size: 15px;">memory</a> <a href="/tags/npm-install-killed/" style="font-size: 15px;">npm install killed</a> <a href="/tags/Template/" style="font-size: 15px;">Template</a> <a href="/tags/Template-String/" style="font-size: 15px;">Template String</a> <a href="/tags/React/" style="font-size: 15px;">React</a> <a href="/tags/ReactJS/" style="font-size: 15px;">ReactJS</a> <a href="/tags/JS/" style="font-size: 15px;">JS</a> <a href="/tags/Facebook/" style="font-size: 15px;">Facebook</a> <a href="/tags/ubuntu/" style="font-size: 15px;">ubuntu</a> <a href="/tags/git/" style="font-size: 15px;">git</a> <a href="/tags/git-server/" style="font-size: 15px;">git server</a> <a href="/tags/gitolite/" style="font-size: 15px;">gitolite</a> <a href="/tags/css/" style="font-size: 15px;">css</a> <a href="/tags/table-cell/" style="font-size: 15px;">table-cell</a> <a href="/tags/display/" style="font-size: 15px;">display</a> <a href="/tags/position/" style="font-size: 15px;">position</a> <a href="/tags/relative/" style="font-size: 15px;">relative</a> <a href="/tags/linux/" style="font-size: 15px;">linux</a> <a href="/tags/aws/" style="font-size: 15px;">aws</a> <a href="/tags/ec2/" style="font-size: 15px;">ec2</a> <a href="/tags/ssh/" style="font-size: 15px;">ssh</a> <a href="/tags/passwd/" style="font-size: 15px;">passwd</a> <a href="/tags/amazon-web-services/" style="font-size: 15px;">amazon-web-services</a> <a href="/tags/%E5%89%8D%E7%AB%AF%E8%BF%9B%E9%98%B6/" style="font-size: 15px;">前端进阶</a> <a href="/tags/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95/" style="font-size: 15px;">前端面试</a> <a href="/tags/HTML5/" style="font-size: 15px;">HTML5</a> <a href="/tags/intern/" style="font-size: 15px;">intern</a> <a href="/tags/newegg/" style="font-size: 15px;">newegg</a> <a href="/tags/graduate/" style="font-size: 15px;">graduate</a> <a href="/tags/%E8%B7%9F%E6%89%93%E5%99%A8/" style="font-size: 15px;">跟打器</a> <a href="/tags/%E8%99%8E%E7%A0%81%E7%BB%83%E4%B9%A0/" style="font-size: 15px;">虎码练习</a> <a href="/tags/closure/" style="font-size: 15px;">closure</a> <a href="/tags/2016/" style="font-size: 15px;">2016</a> <a href="/tags/FP/" style="font-size: 15px;">FP</a> <a href="/tags/Functional-Programming/" style="font-size: 15px;">Functional Programming</a> <a href="/tags/Ramda/" style="font-size: 15px;">Ramda</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> 最近文章</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2023/03/28/%E5%9F%BA%E7%A1%80-02-CSS3%E7%9A%84%E6%96%B0%E7%89%B9%E6%80%A7%E4%B8%80%E8%A7%88/">基础 | 02 CSS3的新特性一览</a></li><li class="post-list-item"><a class="post-list-link" href="/2023/03/26/%E5%9F%BA%E7%A1%80-01-HTML5%E7%9A%84%E6%96%B0%E7%89%B9%E6%80%A7%E4%B8%8E%E6%A1%88%E4%BE%8B%E6%BC%94%E7%A4%BA/">基础 | 01 HTML5的新特性与案例演示</a></li><li class="post-list-item"><a class="post-list-link" href="/2023/03/26/%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF%E5%85%A8%E6%96%B9%E4%BD%8D%E6%B7%B1%E5%BA%A6%E8%BF%9B%E9%98%B6%E6%8C%87%E5%8D%97/">前端技术全方位深度进阶指南</a></li><li class="post-list-item"><a class="post-list-link" href="/2023/01/29/%E6%9C%A8%E6%98%93%E8%B7%9F%E6%89%93%E5%99%A8-2-%E6%89%93%E5%AD%97%E7%BB%83%E4%B9%A0mac%E5%AE%A2%E6%88%B7%E7%AB%AF%E4%B8%8E%E7%BD%91%E9%A1%B5%E7%89%88/">木易跟打器[2]-打字练习mac客户端与网页版</a></li><li class="post-list-item"><a class="post-list-link" href="/2023/01/07/%E6%9C%A8%E6%98%93%E8%B7%9F%E6%89%93%E5%99%A8-macOS%E4%B8%8A%E5%8F%AF%E7%9B%B4%E6%8E%A5%E8%BD%BD%E6%96%87%E7%9A%84%E8%B7%9F%E6%89%93%E5%99%A8/">木易跟打器[1]-macOS上可直接载文的跟打器</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/19/MaintainableCSS-Semantics/">编写可维护性CSS之二，语义化</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/19/MaintainableCSS-introduction/">编写可维护性CSS之一，前言</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/14/Build-and-Public-ES6-Modules-Today/">Babel和Rollup，开始构建发布你的ES6模块(Modules)</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/01/03/%E8%B5%B6%E5%9C%A82015%E6%9C%80%E5%90%8E%E4%B8%80%E7%8F%AD%E8%BD%A6/">赶在2015最后一班车</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/05/31/Overview-of-ES6/">Overview of ES6</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-comment-o"> 最近评论</i></div><script type="text/javascript" src="//owenyang.disqus.com/recent_comments_widget.js?num_items=5&amp;hide_avatars=1&amp;avatar_size=32&amp;excerpt_length=20&amp;hide_mods=1"></script></div><div class="widget"><div class="widget-title"><i class="fa fa-external-link"> 友情链接</i></div><ul></ul><a href="https://typer.owenyang.top/#/about" title="木易跟打器macOS版" target="_blank">木易跟打器macOS版</a></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2023 <a href="/." rel="nofollow">修远.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a></div></div></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=1.0.0" async></script><script type="text/javascript" src="//lib.baomitu.com/fancybox/latest/jquery.fancybox.min.js"></script><script type="text/javascript" src="/js/fancybox.js?v=1.0.0"></script><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/fancybox/latest/jquery.fancybox.min.css"><script type="text/javascript" src="/js/copycode.js?v=1.0.0" successtext="复制成功！"></script><link rel="stylesheet" type="text/css" href="/css/copycode.css?v=1.0.0"><script type="text/javascript" src="/js/codeblock-resizer.js?v=1.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=1.0.0"></script></div></body></html>
