@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkowenyang_website=self.webpackChunkowenyang_website||[]).push([[8936],{6040:e=>{e.exports=JSON.parse('{"permalink":"/blog/tags/css","page":1,"postsPerPage":10,"totalPages":1,"totalCount":3,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);

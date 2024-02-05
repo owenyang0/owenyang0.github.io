@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkowenyang_website=self.webpackChunkowenyang_website||[]).push([[2044],{2856:e=>{e.exports=JSON.parse('{"label":"\u864e\u7801\u7ec3\u4e60","permalink":"/blog/tags/\u864e\u7801\u7ec3\u4e60","allTagsPath":"/blog/tags","count":1,"unlisted":false}')}}]);

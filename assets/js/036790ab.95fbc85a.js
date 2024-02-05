@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkowenyang_website=self.webpackChunkowenyang_website||[]).push([[9280],{5856:e=>{e.exports=JSON.parse('{"label":"FP","permalink":"/blog/tags/fp","allTagsPath":"/blog/tags","count":1,"unlisted":false}')}}]);

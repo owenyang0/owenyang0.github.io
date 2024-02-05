@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkowenyang_website=self.webpackChunkowenyang_website||[]).push([[6588],{2676:e=>{e.exports=JSON.parse('{"label":"ReactJS","permalink":"/blog/tags/react-js","allTagsPath":"/blog/tags","count":1,"unlisted":false}')}}]);
