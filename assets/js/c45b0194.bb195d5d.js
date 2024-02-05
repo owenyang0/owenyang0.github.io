@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkowenyang_website=self.webpackChunkowenyang_website||[]).push([[4488],{5992:e=>{e.exports=JSON.parse('{"label":"Drupal","permalink":"/blog/tags/drupal","allTagsPath":"/blog/tags","count":1,"unlisted":false}')}}]);

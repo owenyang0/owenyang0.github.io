@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkowenyang_website=self.webpackChunkowenyang_website||[]).push([[7112],{768:e=>{e.exports=JSON.parse('{"label":"killed","permalink":"/blog/tags/killed","allTagsPath":"/blog/tags","count":1,"unlisted":false}')}}]);

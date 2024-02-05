@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkowenyang_website=self.webpackChunkowenyang_website||[]).push([[2540],{5904:e=>{e.exports=JSON.parse('{"label":"Mocha","permalink":"/blog/tags/mocha","allTagsPath":"/blog/tags","count":1,"unlisted":false}')}}]);

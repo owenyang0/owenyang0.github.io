@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="zh-Hans" dir="ltr" class="blog-wrapper blog-post-page plugin-blog plugin-id-default" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.1.1">
+<title data-rh="true">木易跟打器-macOS上可直接载文的跟打器 | 欧文·杨</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://owenyang.top/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://owenyang.top/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://owenyang.top/blog/2023/01/07/木易跟打器-macOS上可直接载文的跟打器"><meta data-rh="true" property="og:locale" content="zh_Hans"><meta data-rh="true" name="docusaurus_locale" content="zh-Hans"><meta data-rh="true" name="docusaurus_tag" content="default"><meta data-rh="true" name="docsearch:language" content="zh-Hans"><meta data-rh="true" name="docsearch:docusaurus_tag" content="default"><meta data-rh="true" property="og:title" content="木易跟打器-macOS上可直接载文的跟打器 | 欧文·杨"><meta data-rh="true" name="description" content="macOS上可直接载文的跟打器"><meta data-rh="true" property="og:description" content="macOS上可直接载文的跟打器"><meta data-rh="true" property="og:type" content="article"><meta data-rh="true" property="article:published_time" content="2023-01-07T23:01:17.000Z"><meta data-rh="true" property="article:author" content="https://github.com/owenyang0"><meta data-rh="true" property="article:tag" content="跟打器"><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://owenyang.top/blog/2023/01/07/木易跟打器-macOS上可直接载文的跟打器"><link data-rh="true" rel="alternate" href="https://owenyang.top/blog/2023/01/07/木易跟打器-macOS上可直接载文的跟打器" hreflang="zh-Hans"><link data-rh="true" rel="alternate" href="https://owenyang.top/blog/2023/01/07/木易跟打器-macOS上可直接载文的跟打器" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/blog/rss.xml" title="欧文·杨 RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="欧文·杨 Atom Feed"><link rel="stylesheet" href="/assets/css/styles.2241eb58.css">
+<script src="/assets/js/runtime~main.c92b14cb.js" defer="defer"></script>
+<script src="/assets/js/main.c57b0ae0.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="跳到主要内容"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">跳到主要内容</a></div><nav aria-label="主导航" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="切换导航栏" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/logo.svg" alt="欧文·杨" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/logo.svg" alt="欧文·杨" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">欧文·杨</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/blog">博客</a><a class="navbar__item navbar__link" href="/docs/intro">文档</a></div><div class="navbar__items navbar__items--right"><a href="https://typer.owenyang.top/portal" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">木易跟打器<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="切换浅色/暗黑模式（当前为浅色模式）" aria-label="切换浅色/暗黑模式（当前为浅色模式）" aria-live="polite"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="container margin-vert--lg"><div class="row"><aside class="col col--3"><nav class="sidebar_re4s thin-scrollbar" aria-label="最近博文导航"><div class="sidebarItemTitle_pO2u margin-bottom--md">所有文章</div><ul class="sidebarItemList_Yudw clean-list"><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/blog/2024/01/31/high-performace-editor-zed-in-rust">工具 | 高性能Zed编辑器开源，响应速度超快、干掉VS Code？</a></li><li class="sidebarItem__DBe"><a aria-current="page" class="sidebarItemLink_mo7H sidebarItemLinkActive_I1ZP" href="/blog/2023/01/07/木易跟打器-macOS上可直接载文的跟打器">木易跟打器-macOS上可直接载文的跟打器</a></li><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/blog/2016/05/20/编写可维护性CSS之二，语义化">编写可维护性CSS之二，语义化</a></li><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/blog/2016/05/20/编写可维护性CSS之一，前言">编写可维护性CSS之一，前言</a></li><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/blog/2016/05/15/Babel和Rollup，开始构建发布你的ES6模块「Modules」">Babel和Rollup，开始构建发布你的ES6模块「Modules」</a></li><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/blog/2016/01/03/赶在2015最后一班车">赶在2015最后一班车</a></li><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/blog/2015/06/01/Overview-of-ES6">Overview of ES6</a></li><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/blog/2015/05/08/两分钟了解ReactiveX">两分钟了解ReactiveX</a></li><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/blog/2015/03/17/修复AWS上EC2损坏的sshd_config文件">修复AWS上EC2损坏的sshd_config文件</a></li><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/blog/2015/02/13/ECMAScript-6中字符串的新特性">ECMAScript 6中字符串的新特性</a></li><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/blog/2015/02/10/NPM-install---killed-error-solution">NPM install - killed error solution</a></li><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/blog/2015/01/05/ECMAScript-6中的数组操作方法">ECMAScript 6中的数组操作方法</a></li><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/blog/2014/12/25/Ubuntu上的Git-Server">Ubuntu上的Git Server</a></li><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/blog/2014/12/14/css-position-relative与display-table-cell深入分析">css - position relative与display table-cell深入分析</a></li><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/blog/2014/12/14/AEM-Adobe-CMS-扒坑记之始">AEM - Adobe CMS 扒坑记之始</a></li><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/blog/2014/12/11/Change-Tab-Title-with-JavaScript">Change Tab Title with JavaScript</a></li><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/blog/2014/12/04/JavaScript-TDD-with-Mocha">JavaScript TDD with Mocha</a></li><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/blog/2014/03/03/浅谈JavaScript闭包">浅谈JavaScript闭包</a></li></ul></nav></aside><main class="col col--7" itemscope="" itemtype="https://schema.org/Blog"><article itemprop="blogPost" itemscope="" itemtype="https://schema.org/BlogPosting"><meta itemprop="description" content="macOS上可直接载文的跟打器"><header><h1 class="title_f1Hy" itemprop="headline">木易跟打器-macOS上可直接载文的跟打器</h1><div class="container_mt6G margin-vert--md"><time datetime="2023-01-07T23:01:17.000Z" itemprop="datePublished">2023年1月7日</time> · <!-- -->阅读需 13 分钟</div><div class="margin-top--md margin-bottom--sm row"><div class="col col--6 authorCol_Hf19"><div class="avatar margin-bottom--sm"><a href="https://github.com/owenyang0" target="_blank" rel="noopener noreferrer" class="avatar__photo-link"><img class="avatar__photo" src="https://github.com/owenyang0.png" alt="木易(OwenYang)" itemprop="image"></a><div class="avatar__intro" itemprop="author" itemscope="" itemtype="https://schema.org/Person"><div class="avatar__name"><a href="https://github.com/owenyang0" target="_blank" rel="noopener noreferrer" itemprop="url"><span itemprop="name">木易(OwenYang)</span></a></div><small class="avatar__subtitle" itemprop="description">互联网人、电子垃圾体验者、挨踢FEer、木易跟打器作者</small></div></div></div></div></header><div id="__blog-post-container" class="markdown" itemprop="articleBody"><img style="max-height:400px" alt="木易跟打器macOS版" src="https://typer.owenyang.top/img/logo-lanscape%402x.png">
+<blockquote>
+<p>macOS上可直接载文的跟打器
+下载地址：<a href="https://typer.owenyang.top/#/download" target="_blank" rel="noopener noreferrer">https://typer.owenyang.top/#/download</a>
+版本记录：<a href="https://typer.owenyang.top/#/changelog" target="_blank" rel="noopener noreferrer">https://typer.owenyang.top/#/changelog</a></p>
+</blockquote>
+<p>本人是个五笔爱好者，也一直在使用五笔，曾经(差不多10年前了)也做过Windows平台的跟打器<a href="https://github.com/owenyang0/FollowTyperAndSender" target="_blank" rel="noopener noreferrer">易跟打Windows版</a>。</p>
+<p>从 <code>Windows</code> 转到 <code>Mac</code> 之后，苦于<code>macOS</code>没有可用的跟打器，偶然看到了<a href="https://gitee.com/hotleave/quick-typing" target="_blank" rel="noopener noreferrer">QT</a>基于他们的代码做一个<code>macOS</code>上可直接载文用的跟打器，外理了一些macOS系统的兼容，于是便有了这个项目。</p>
+<img style="max-height:400px" alt="木易跟打器macOS版" src="https://typer.owenyang.top/img/ui%402x.png">
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="一快速上手">一、快速上手<a href="#一快速上手" class="hash-link" aria-label="一、快速上手的直接链接" title="一、快速上手的直接链接">​</a></h2>
+<p>因为需要载文，在<code>系统偏好设置-安全性与隐私-辅助功能</code>中，允许木易跟打器控制电脑</p>
+<img width="500" alt="木易跟打器macOS版" src="https://typer.owenyang.top/img/setting.png">
+<p>同时由于QQ macOS版本的限制，无法全文获取，可通过以下方式载文</p>
+<ul>
+<li>鼠标移至聊天窗口对应消息位置</li>
+<li>按<code>F4</code>载入文本</li>
+<li>开始打字</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="二主要功能">二、主要功能<a href="#二主要功能" class="hash-link" aria-label="二、主要功能的直接链接" title="二、主要功能的直接链接">​</a></h2>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled="" checked=""> <!-- -->QQ群直接载文</li>
+<li class="task-list-item"><input type="checkbox" disabled="" checked=""> <!-- -->赛文跟打</li>
+<li class="task-list-item"><input type="checkbox" disabled="" checked=""> <!-- -->词语提示</li>
+<li class="task-list-item"><input type="checkbox" disabled="" checked=""> <!-- -->成绩发送</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="三contributing">三、Contributing<a href="#三contributing" class="hash-link" aria-label="三、Contributing的直接链接" title="三、Contributing的直接链接">​</a></h2>
+<ul>
+<li>有问题，提个<a href="https://github.com/owenyang0/easy-typer/issues" target="_blank" rel="noopener noreferrer">Issue</a></li>
+<li>有想法，提个<a href="https://github.com/owenyang0/easy-typer/issues" target="_blank" rel="noopener noreferrer">Issue</a></li>
+<li>或通过QQ群联系我：<strong>木易跟打器</strong> <code>787343469</code></li>
+<li>有能力，提个<a href="https://github.com/owenyang0/easy-typer/pulls" target="_blank" rel="noopener noreferrer">PR</a></li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="四声明">四、声明<a href="#四声明" class="hash-link" aria-label="四、声明的直接链接" title="四、声明的直接链接">​</a></h2>
+<ol>
+<li>本程序系私人用途，非商业产品，即不提供相应的服务</li>
+<li>本程序所有数据均保存在用户浏览器的<a href="https://developer.mozilla.org/zh-CN/docs/Web/API/IndexedDB_API" target="_blank" rel="noopener noreferrer">IndexedDB</a>中，<strong>不会上传到任何服务器</strong></li>
+<li>如果有侵权行为，请联系：<code>songallica@gmail.com</code>，会在看到后第一时间取消</li>
+<li>用户使用本程序所引发的一切问题，由用户自己承担，本程序概不负责</li>
+<li><strong>使用本程序则旨在接受本条及以上条款</strong></li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="五操作说明">五、操作说明<a href="#五操作说明" class="hash-link" aria-label="五、操作说明的直接链接" title="五、操作说明的直接链接">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="51-快捷键">5.1 快捷键<a href="#51-快捷键" class="hash-link" aria-label="5.1 快捷键的直接链接" title="5.1 快捷键的直接链接">​</a></h3>
+<ul>
+<li><code>F4</code>：激活QQ聊天窗口，从当前鼠标位置载文（确保鼠标在需要载文的消息上面）</li>
+<li><code>Ctrl</code> + <code>v</code>：从剪切 板载文（Mac下为<code>Cmd</code> + <code>v</code>，与粘贴快捷键一致）</li>
+<li><code>F3</code>：重打</li>
+<li><code>Esc</code>：暂停</li>
+<li><code>Enter</code>: 继续</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="52-载文">5.2 载文<a href="#52-载文" class="hash-link" aria-label="5.2 载文的直接链接" title="5.2 载文的直接链接">​</a></h3>
+<p>由于QQ macOS版本的限制，无法全文获取。可将鼠标移至聊天窗口对应消息位置，按<code>F4</code>载入文本。</p>
+<ol>
+<li>『赛文文字』从QQ群使用指令获取赛文，然后鼠标移至赛文外，按<code>F4</code>即可</li>
+<li>『自由文本』将要打的文本复制到剪切板，然后到主页粘贴即可</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="53-打文">5.3 打文<a href="#53-打文" class="hash-link" aria-label="5.3 打文的直接链接" title="5.3 打文的直接链接">​</a></h3>
+<blockquote>
+<p>载文后，下方的输入框自动获取焦点，当按下任<strong>意键</strong>时，开始计时。</p>
+</blockquote>
+<blockquote>
+<p>打文过程中可以使用<code>Esc</code>暂停。暂停后，使用<code>Enter</code>继续，按下<code>Enter</code>后，输入框自动获取焦点，并立即继续计时。</p>
+</blockquote>
+<blockquote>
+<p>如果打的过程中，或完成后，对结果不满意，可以按<code>F3</code>重新开始。计时会清零，并等待第一个键按下后，再次开始计时。</p>
+</blockquote>
+<blockquote>
+<p>如果赛文较长，而对照文本区域无法完全显示，那么在打文过程中，对照文本会自动根据输入进度移动滚动条，方便跟打。</p>
+</blockquote>
+<blockquote>
+<p>如果在打文时输入错误的字词，会以指定颜色的背景（默认是红色）显示。</p>
+</blockquote>
+<blockquote>
+<p>跟打时，必须将赛文<strong>全部输入正确</strong>才会停止计时，如果发现打完最后一个字时，并没有提示完成，计时还在继续，则需  要到对照文本中查找被标成错误背景的字词并加以修正，直至全部正确。</p>
+</blockquote>
+<h4 class="anchor anchorWithStickyNavbar_LWe7" id="词语提示">词语提示<a href="#词语提示" class="hash-link" aria-label="词语提示的直接链接" title="词语提示的直接链接">​</a></h4>
+<blockquote>
+<p>程序提供词语提示功能，方便前期掌握词库中的词语。</p>
+</blockquote>
+<blockquote>
+<p>在词语提示功能打开时，程序会将赛文中的词语去词库中匹配，并计算出<strong>码长最短</strong>的一个组合，这个码长就是理论码长。</p>
+</blockquote>
+<blockquote>
+<p>开始输入后，如果没按词语提示的内容输入，那么提示的内容会同时进行调整，提示从当前位置开始的码长最短的组合。</p>
+</blockquote>
+<p>基础的词语提示以间隔加粗的方式展示，如：“这个<strong>码长</strong>短”。在此基础上，还提供：</p>
+<ul>
+<li>码长提示：用不同的颜色（不是背景颜色）来区分1，2，3，4码的字词。</li>
+<li>选重提示：在需要选重的字词下方增加下划线，并在下划线下方显示选重键。如果某个字词不需要选重，则下方什么都不显示。</li>
+<li>编码提示：在字词下方显示该字词的编码（不含选重键）。除了该方式外，界面右上角也有编码及选重键的提示。</li>
+<li>标点顶屏：在可以使用标点顶屏的字词下显示顶屏提示（默认是“顶”字），如果某个首选字词后是标点，则可以利用标点直接将首选上屏，这样可以减少1码。</li>
+</ul>
+<p><em><strong>词语提示需要上传码表后才可以使用，具体见设置中的相关内容</strong></em></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="54-发送成绩">5.4 发送成绩<a href="#54-发送成绩" class="hash-link" aria-label="5.4 发送成绩的直接链接" title="5.4 发送成绩的直接链接">​</a></h3>
+<p>跟打结束后，成绩会<strong>自动</strong> 发送至QQ群当前激活的窗口并发送，并复制到系统剪切板</p>
+<p>如不想自动发送成绩，可在左侧开启 <strong><code>潜水</code></strong> 模式</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="55-查看理想编码">5.5 查看理想编码<a href="#55-查看理想编码" class="hash-link" aria-label="5.5 查看理想编码的直接链接" title="5.5 查看理想编码的直接链接">​</a></h3>
+<p>程序能根据词库中的词条计算出理想码长，也可以计算出该码长对应的编码。点击左侧面板中的<code>理想</code>二字，即可查看理想编码对应的编码。</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="56-查看录入的编码">5.6 查看录入的编码<a href="#56-查看录入的编码" class="hash-link" aria-label="5.6 查看录入的编码的直接链接" title="5.6 查看录入的编码的直接链接">​</a></h3>
+<p>程序会记录打文过程中按下的每一个按键，点击左侧面板中的<code>码长</code>二字，即可查看打文过程中按下的所有按键。</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="六设置">六、设置<a href="#六设置" class="hash-link" aria-label="六、设置的直接链接" title="六、设置的直接链接">​</a></h2>
+<blockquote>
+<p>设置中的变更，除了上传码表文件会自动保存外，其余的变动均需手动点击下方的”保存按钮进行保存</p>
+</blockquote>
+<ul>
+<li><code>保存</code>: 将变更写入数据库</li>
+<li><code>重置</code>：恢复设置到数据库中的状态</li>
+<li><code>恢复默认</code>: 将所有设置恢复到默认状态</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="61-基础设置">6.1 基础设置<a href="#61-基础设置" class="hash-link" aria-label="6.1 基础设置的直接链接" title="6.1 基础设置的直接链接">​</a></h3>
+<ul>
+<li><code>自动重新开始</code>：当删除输入的所有文字后自动重新开始</li>
+<li><code>结束条件</code>: 赛文结束的条件，默认为赛文中所有的字及标点都正确时结束。<code>打完</code>则比较赛文和输入的长度，一致就认为结束。但在结束时如果输入的内容中有错字，则每错一个字罚5个字，会导致速度降低</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="62-词提设置">6.2 词提设置<a href="#62-词提设置" class="hash-link" aria-label="6.2 词提设置的直接链接" title="6.2 词提设置的直接链接">​</a></h3>
+<ul>
+<li>
+<p><code>词语提示</code>: 总开关，关闭时不会进行词语提示，默认关闭</p>
+</li>
+<li>
+<p><code>码表文件</code>: 输入法使用的码表文件，文件使用<code>多多格式</code>，<code>UTF-8</code>编码，如：</p>
+<div class="language-tsv codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-tsv codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">五  pf</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">五笔    pfr</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">笔  rkq</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="复制代码到剪贴板" title="复制" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
+</li>
+<li>
+<p><code>提示选项</code>：选择提示内容，<code>词语</code>是必选的。</p>
+</li>
+<li>
+<p><code>候选词条数</code>: 输入法每页候选词条数，对于需要翻页的字词，会的选重提示上增加<code>翻页键</code>。默认：9</p>
+</li>
+<li>
+<p><code>最大候选词位置</code>：为避免某些生僻词位置过去靠后，可以通过设置该值，将位置过于靠后的词略掉，拆成位置更靠前一些的短词或单字。该设置可能会影响码长。默认：0</p>
+</li>
+<li>
+<p><code>翻页键</code>：指定的词条位置比较靠后，需要翻页才能选择时，会在选重码提示上增加该符号。只需要指定提示的符号，方便自己识别，即使输入法设置了多组翻页键。默认：+</p>
+</li>
+<li>
+<p><code>选重键</code>：提示时展示的选重键。每个字符表示一个选重键，字符数不得少于<code>候选词条数</code>。默认：<code>␣23456789</code></p>
+</li>
+<li>
+<p><code>选重键文本</code>：选重键对应的文本，当这些字符出现在字词后面时，<strong>必须</strong>手动选择词条。默认：<code> 234567890;+&#x27;＋；’</code></p>
+</li>
+<li>
+<p><code>标点顶屏提示</code>: 顶屏提示符号</p>
+</li>
+<li>
+<p><code>四码唯一自动上屏</code>：如题</p>
+</li>
+<li>
+<p><code>第五码首选上屏</code>：如题</p>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="63-成绩设置">6.3 成绩设置<a href="#63-成绩设置" class="hash-link" aria-label="6.3 成绩设置的直接链接" title="6.3 成绩设置的直接链接">​</a></h3>
+<ul>
+<li>标识：赛文标识，如<code>第999段</code></li>
+<li>速度：每分钟输入的字数，数值越大说明打字的速度越快</li>
+<li>击键：每秒钟敲击按键的次数</li>
+<li>码长：平均每个字（含标点符号）所需要的按键次数</li>
+<li>理想码长：程序计算出的最短码长</li>
+<li>字数：文章总字数</li>
+<li>错字：结束时输入的错字数</li>
+<li>用时：总时间，单位秒</li>
+<li>暂停：打文时暂停的次数和总 暂停时长</li>
+<li>键准：按键准确率，退格数及回改数作为失误按键来源，算法：<code>(总按键数 - 退格数 - 回改数 * 平均码长) / 总按键数</code></li>
+<li>键法：左手与右手按键数的均衡性，算法：<code>(1 - abs(左 - 右) / (左 + 右)) * 100</code></li>
+<li>左：左手按键次数</li>
+<li>右：右手按键次数</li>
+<li>打词：有多少字是通过词组的方式输入的</li>
+<li>打词率：打词数占总字数的比率</li>
+<li>选重：要输入的字词不在首选位置的次数</li>
+<li>回改：输入错误被删除的字数</li>
+<li>键数：总按键次数</li>
+<li>退格：退格键被按次数</li>
+<li>回车：回车键被按次数</li>
+<li>重打：重新打的次数</li>
+<li>版本：版本信息</li>
+<li>输入法：所使用的输入法名称</li>
+<li>个性签名：想立的Flag</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="64-标点设置">6.4 标点设置<a href="#64-标点设置" class="hash-link" aria-label="6.4 标点设置的直接链接" title="6.4 标点设置的直接链接">​</a></h3>
+<p>标点用于：</p>
+<ul>
+<li>顶屏计算：仅用于顶屏计算，不将标点加入码表</li>
+<li>码表及顶屏计算：将标点加入码表，防止码表中的标点码长过长</li>
+</ul>
+<blockquote>
+<p>如果需要将标点加入码表，则需要重新导入词库文件</p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="65-载文设置">6.5 载文设置<a href="#65-载文设置" class="hash-link" aria-label="6.5 载文设置的直接链接" title="6.5 载文设置的直接链接">​</a></h3>
+<ul>
+<li><code>去除空格</code>: 移除文章中的所有空白字符，包括：空格、回车、换行、制表符等</li>
+</ul></div><footer class="row docusaurus-mt-lg blogPostFooterDetailsFull_mRVl"><div class="col"><b>标签：</b><ul class="tags_jXut padding--none margin-left--sm"><li class="tag_QGVx"><a class="tag_zVej tagRegular_sFm0" href="/blog/tags/跟打器">跟打器</a></li></ul></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="博文分页导航"><a class="pagination-nav__link pagination-nav__link--prev" href="/blog/2024/01/31/high-performace-editor-zed-in-rust"><div class="pagination-nav__sublabel">较新一篇</div><div class="pagination-nav__label">工具 | 高性能Zed编辑器开源，响应速度超快、干掉VS Code？</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/blog/2016/05/20/编写可维护性CSS之二，语义化"><div class="pagination-nav__sublabel">较旧一篇</div><div class="pagination-nav__label">编写可维护性CSS之二，语义化</div></a></nav></main><div class="col col--2"><div class="tableOfContents_bqdL thin-scrollbar"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#一快速上手" class="table-of-contents__link toc-highlight">一、快速上手</a></li><li><a href="#二主要功能" class="table-of-contents__link toc-highlight">二、主要功能</a></li><li><a href="#三contributing" class="table-of-contents__link toc-highlight">三、Contributing</a></li><li><a href="#四声明" class="table-of-contents__link toc-highlight">四、声明</a></li><li><a href="#五操作说明" class="table-of-contents__link toc-highlight">五、操作说明</a><ul><li><a href="#51-快捷键" class="table-of-contents__link toc-highlight">5.1 快捷键</a></li><li><a href="#52-载文" class="table-of-contents__link toc-highlight">5.2 载文</a></li><li><a href="#53-打文" class="table-of-contents__link toc-highlight">5.3 打文</a></li><li><a href="#54-发送成绩" class="table-of-contents__link toc-highlight">5.4 发送成绩</a></li><li><a href="#55-查看理想编码" class="table-of-contents__link toc-highlight">5.5 查看理想编码</a></li><li><a href="#56-查看录入的编码" class="table-of-contents__link toc-highlight">5.6 查看录入的编码</a></li></ul></li><li><a href="#六设置" class="table-of-contents__link toc-highlight">六、设置</a><ul><li><a href="#61-基础设置" class="table-of-contents__link toc-highlight">6.1 基础设置</a></li><li><a href="#62-词提设置" class="table-of-contents__link toc-highlight">6.2 词提设置</a></li><li><a href="#63-成绩设置" class="table-of-contents__link toc-highlight">6.3 成绩设置</a></li><li><a href="#64-标点设置" class="table-of-contents__link toc-highlight">6.4 标点设置</a></li><li><a href="#65-载文设置" class="table-of-contents__link toc-highlight">6.5 载文设置</a></li></ul></li></ul></div></div></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">文档</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/blog">博客</a></li></ul></div><div class="col footer__col"><div class="footer__title">作品</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://typer.owenyang.top/portal" target="_blank" rel="noopener noreferrer" class="footer__link-item">易·跟打<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://yuedu.owenyang.top" target="_blank" rel="noopener noreferrer" class="footer__link-item">易·阅读<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div><div class="col footer__col"><div class="footer__title">更多</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://owenyang.top/about" target="_blank" rel="noopener noreferrer" class="footer__link-item">木易某某</a></li><li class="footer__item"><a href="https://github.com/owenyang0" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2024 木易某某 · 蜀ICP备2023002101号-1</div></div></div></footer></div>
+</body>
+</html>

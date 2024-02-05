@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkowenyang_website=self.webpackChunkowenyang_website||[]).push([[2304],{9624:e=>{e.exports=JSON.parse('{"label":"aws","permalink":"/blog/tags/aws","allTagsPath":"/blog/tags","count":1,"unlisted":false}')}}]);

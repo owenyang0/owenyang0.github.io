@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkowenyang_website=self.webpackChunkowenyang_website||[]).push([[4380],{5668:e=>{e.exports=JSON.parse('{"label":"Template String","permalink":"/blog/tags/template-string","allTagsPath":"/blog/tags","count":1,"unlisted":false}')}}]);

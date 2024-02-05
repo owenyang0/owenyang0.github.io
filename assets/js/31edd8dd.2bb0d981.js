@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkowenyang_website=self.webpackChunkowenyang_website||[]).push([[1436],{6818:a=>{a.exports=JSON.parse('{"label":"MaintainableCSS","permalink":"/blog/tags/maintainable-css","allTagsPath":"/blog/tags","count":2,"unlisted":false}')}}]);

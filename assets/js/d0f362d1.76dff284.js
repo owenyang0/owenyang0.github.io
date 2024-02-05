@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkowenyang_website=self.webpackChunkowenyang_website||[]).push([[2516],{5484:e=>{e.exports=JSON.parse('{"label":"git server","permalink":"/blog/tags/git-server","allTagsPath":"/blog/tags","count":1,"unlisted":false}')}}]);

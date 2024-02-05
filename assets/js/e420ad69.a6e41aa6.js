@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkowenyang_website=self.webpackChunkowenyang_website||[]).push([[5952],{502:e=>{e.exports=JSON.parse('{"label":"npm install","permalink":"/blog/tags/npm-install","allTagsPath":"/blog/tags","count":1,"unlisted":false}')}}]);

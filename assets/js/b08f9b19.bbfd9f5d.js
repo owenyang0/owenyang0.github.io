@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkowenyang_website=self.webpackChunkowenyang_website||[]).push([[408],{2320:e=>{e.exports=JSON.parse('{"label":"table-cell","permalink":"/blog/tags/table-cell","allTagsPath":"/blog/tags","count":1,"unlisted":false}')}}]);

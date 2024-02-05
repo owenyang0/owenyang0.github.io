@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkowenyang_website=self.webpackChunkowenyang_website||[]).push([[1788],{5859:s=>{s.exports=JSON.parse('{"label":"passwd","permalink":"/blog/tags/passwd","allTagsPath":"/blog/tags","count":1,"unlisted":false}')}}]);

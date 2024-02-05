@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkowenyang_website=self.webpackChunkowenyang_website||[]).push([[624],{5600:e=>{e.exports=JSON.parse('{"label":"ECMAScript 6","permalink":"/blog/tags/ecma-script-6","allTagsPath":"/blog/tags","count":2,"unlisted":false}')}}]);

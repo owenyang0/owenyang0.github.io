@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkowenyang_website=self.webpackChunkowenyang_website||[]).push([[6324],{9784:e=>{e.exports=JSON.parse('{"label":"zed","permalink":"/blog/tags/zed","allTagsPath":"/blog/tags","count":1,"unlisted":false}')}}]);

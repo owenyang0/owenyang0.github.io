@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkowenyang_website=self.webpackChunkowenyang_website||[]).push([[9288],{3552:e=>{e.exports=JSON.parse('{"label":"amazon-web-services","permalink":"/blog/tags/amazon-web-services","allTagsPath":"/blog/tags","count":1,"unlisted":false}')}}]);

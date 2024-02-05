@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkowenyang_website=self.webpackChunkowenyang_website||[]).push([[6240],{4048:e=>{e.exports=JSON.parse('{"label":"gitolite","permalink":"/blog/tags/gitolite","allTagsPath":"/blog/tags","count":1,"unlisted":false}')}}]);
