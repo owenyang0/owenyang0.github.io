@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkowenyang_website=self.webpackChunkowenyang_website||[]).push([[4296],{2416:e=>{e.exports=JSON.parse('[{"label":"pve","permalink":"/docs/tags/pve","count":1},{"label":"pve,lxc","permalink":"/docs/tags/pve-lxc","count":1},{"label":"openwrt","permalink":"/docs/tags/openwrt","count":1}]')}}]);
