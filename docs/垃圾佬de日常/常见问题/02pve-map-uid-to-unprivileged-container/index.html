@@ -10,7 +10,7 @@
 
 
 <script src="https://hm.baidu.com/hm.js?ea8036d07ac9ad383c13ada3780f601b" async></script><link rel="stylesheet" href="/assets/css/styles.8ee4a802.css">
-<script src="/assets/js/runtime~main.6792ce16.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.90242d35.js" defer="defer"></script>
 <script src="/assets/js/main.bf0b83b6.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -18,7 +18,7 @@
 该如何将DSM挂载到非特权LXC容器里？</p></div></div>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="1挂载到dsm共享目录到pve">1、挂载到DSM共享目录到PVE<a href="#1挂载到dsm共享目录到pve" class="hash-link" aria-label="1、挂载到DSM共享目录到PVE的直接链接" title="1、挂载到DSM共享目录到PVE的直接链接">​</a></h2>
 <p><code>pve-&gt;datacenter-&gt;storage</code> 里添加cifs存储(Content随便选一个就行)，添加完后会被挂载到<code>/mnt/pve/</code>底下</p>
-<p><img decoding="async" loading="lazy" src="http://static.owenyang.top/blogs/20240226195651.png" alt="" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" src="https://static.owenyang.top/blogs/20240226195651.png" alt="" class="img_ev3q"></p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="2宿主机配置">2、宿主机配置<a href="#2宿主机配置" class="hash-link" aria-label="2、宿主机配置的直接链接" title="2、宿主机配置的直接链接">​</a></h2>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="21-更改-etcpvelxcidconf-配置">2.1 更改 /etc/pve/lxc/&lt;id&gt;.conf 配置<a href="#21-更改-etcpvelxcidconf-配置" class="hash-link" aria-label="2.1 更改 /etc/pve/lxc/&lt;id&gt;.conf 配置的直接链接" title="2.1 更改 /etc/pve/lxc/&lt;id&gt;.conf 配置的直接链接">​</a></h3>
 <p>更改映射文件 <code>/etc/pve/lxc/500.conf</code>（我的是500）:</p>
@@ -36,7 +36,7 @@
 <p>lxc.idmap = u 1006 101006 64530 和 lxc.idmap = g 1006 101006 64530：这两行代码将容器中的用户ID和组ID从1006映射到主机的101006，映射的数量是64530。也就是说，容器中的用户ID和组ID从1006到65535会被映射到主机的101006到165535。</p>
 </blockquote>
 <blockquote>
-<p>/etc/subuid中加入 root:1005:1 和 /etc/subgid中加入 root:1005:1：这两行代码是在主机的/etc/subuid和/etc/subgid文件中添加条目，分别为root:1005:1。这意味着主机的root用户被允许在容器中以用户ID和组ID 1005的身份 运行程序。</p>
+<p>/etc/subuid中加入 root:1005:1 和 /etc/subgid中加入 root:1005:1：这两行代码是在主机的/etc/subuid和/etc/subgid文件中添加条目，分别为root:1005:1。这意味着主机的root用户被允许在容器中以用户ID和组ID 1005的身份运行程序。</p>
 </blockquote>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="22-添加挂载点">2.2 添加挂载点<a href="#22-添加挂载点" class="hash-link" aria-label="2.2 添加挂载点的直接链接" title="2.2 添加挂载点的直接链接">​</a></h3>
 <p><code>pct set 500 -mp0 /mnt/pve/music,mp=/opt/nas/music</code></p>
