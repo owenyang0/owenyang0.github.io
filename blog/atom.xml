@@ -77,6 +77,8 @@
             <name>木易(OwenYang)</name>
             <uri>https://github.com/owenyang0</uri>
         </author>
+        <category label="PVE" term="PVE"/>
+        <category label="Bark" term="Bark"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[工具 | 高性能Zed编辑器开源，响应速度超快、干掉VS Code？]]></title>
