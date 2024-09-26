@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkowenyang_website=self.webpackChunkowenyang_website||[]).push([[4584],{2768:e=>{e.exports=JSON.parse('{"label":"Uptime Kuma","permalink":"/blog/tags/uptime-kuma","allTagsPath":"/blog/tags","count":1,"unlisted":false}')}}]);
