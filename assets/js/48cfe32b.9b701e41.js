@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkowenyang_website=self.webpackChunkowenyang_website||[]).push([[4084],{1668:a=>{a.exports=JSON.parse('{"label":"Ramda","permalink":"/blog/tags/ramda","allTagsPath":"/blog/tags","count":1,"unlisted":false}')}}]);

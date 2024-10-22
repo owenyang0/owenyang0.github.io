@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkowenyang_website=self.webpackChunkowenyang_website||[]).push([[6526],{6600:e=>{e.exports=JSON.parse('{"label":"NPM","permalink":"/blog/tags/npm","allTagsPath":"/blog/tags","count":2,"unlisted":false}')}}]);
