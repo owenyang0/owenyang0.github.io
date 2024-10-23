@@ -1,6 +1,6 @@
 User-agent: *
 
-Allow: /sitemap.xml
+Allow: /
 Disallow: /__unused/
 Sitemap: https://owenyang.top/sitemap.xml
 Host: https://owenyang.top
